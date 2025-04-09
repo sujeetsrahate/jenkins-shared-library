@@ -1,0 +1,13 @@
+@Library('common') _   // Loads the shared library registered in Jenkins
+
+pipeline {
+  agent any
+
+  stages {
+    stage('Common Build') {
+      steps {
+        commonBuild()   // 🛠 Calls the shared library function (commonBuild.groovy)
+      }
+    }
+  }
+}
