@@ -6,7 +6,7 @@ pipeline {
   stages {
     stage('Common Build') {
       steps {
-        commonBuild()   // 🛠 Calls the shared library function (commonBuild.groovy)
+        commonBuild()   // Calls the shared library function (commonBuild.groovy)
       }
     }
   }
